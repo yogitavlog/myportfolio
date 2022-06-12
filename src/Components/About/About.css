@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.animated {
+    position: relative;
+}
+
+.animated-info {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 300px;
+    position: relative;
+}
+
+.animated-item {
+    color: #ffc200;
+    line-height: inherit;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: BottomTotop 5s linear infinite 0s;
+}
+
+.animated-item:nth-child(2n+2) {
+    animation-delay: 2s;
+}
+
+@keyframes BottomTotop {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.resume {
+    color: #ffc200;
+    text-decoration: none;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.femaleDev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    .webDev {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .webDev {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .animated {
+        font-size: 2rem !important;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    .resume {
+        font-size: 14px !important;
+    }
+    .webDev {
+        width: 300px;
+        height: 300px;
+    }
+}

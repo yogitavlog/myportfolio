@@ -1,0 +1,129 @@
+.navbar {
+    background: transparent !important;
+    box-shadow: none !important;
+    position: fixed !important;
+    top: 0;
+    padding: 0 2rem;
+    z-index: 999;
+}
+
+.navbar.active {
+    background-color: rgba(12, 12, 13, 0.89) !important;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0) !important;
+    backdrop-filter: blur(5px);
+}
+
+.navBtn::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffc200;
+    transition: 0.3s all linear;
+}
+
+.navBtn:hover::before {
+    width: 65px;
+    opacity: 0.7;
+}
+
+.navBtn2::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffc200;
+    transition: 0.3s all linear;
+}
+
+.navBtn2:hover::before {
+    width: 75px;
+    opacity: 0.7;
+}
+
+.icon {
+    display: none;
+}
+
+.NavbarItems {
+    display: block;
+}
+
+.nav-icon-5 {
+    width: 30px;
+    height: 20px;
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+
+.nav-icon-5 span {
+    background-color: #ffc200;
+    opacity: 0.7;
+    position: absolute;
+    border-radius: 2px;
+    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    width: 100%;
+    height: 4px;
+    transition-duration: 500ms;
+}
+.nav-icon-5 span:hover {
+    opacity: 0.9;
+}
+
+.nav-icon-5 span:nth-child(1) {
+    top: 0px;
+    right: 0px;
+}
+
+.nav-icon-5 span:nth-child(2) {
+    top: 8px;
+    right: 0px;
+}
+
+.nav-icon-5 span:nth-child(3) {
+    bottom: 0px;
+    right: 0px;
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(1) {
+    transform: rotate(-3deg) scaleY(1.1);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(2) {
+    transform: rotate(3deg) scaleY(1.1);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(3) {
+    transform: rotate(-4deg) scaleY(1.1);
+}
+
+.nav-icon-5.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 13px;
+}
+
+.nav-icon-5.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-icon-5.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 13px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    .icon {
+        display: block;
+    }
+
+    .NavbarItems {
+        display: none;
+    }
+}

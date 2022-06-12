@@ -1,0 +1,48 @@
+.menuDiv {
+    position: fixed;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(0);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu {
+    position: fixed;
+    transform: translateX(0);
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #0c0c0d;
+    box-shadow: 5px 5px 20px #000;
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu.out {
+    transform: translateX(100%);
+    position: fixed;
+  }
+  .menuDiv.out {
+    transform: translateX(100%);
+    position: fixed;
+  }
+  .menuDiv{
+    display: none;
+  }
+
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .menuDiv {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 500px) {
+    .menuDiv {
+      display: block;
+    }
+    .sidebarIcons {
+      flex-direction: column !important;
+    }
+  }
+  
+  

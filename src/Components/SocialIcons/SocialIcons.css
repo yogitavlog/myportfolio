@@ -1,0 +1,9 @@
+.icons {
+    fill: #fff;
+    opacity: 0.7;
+    transition: 0.1s linear;
+}
+
+.icons:hover {
+    fill: #ffc200;
+}
