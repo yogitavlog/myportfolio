@@ -75,7 +75,7 @@ function Contact() {
                         <Box>
                             <HelloButton
                                 disableRipple
-                                href={"mailto:https://yogitavarshney1999@gmail.com"}
+                                href={"mailto:yogitavarshney1999@gmail.com"}
                                 target="_blank"
                                 rel="noreferrer"
                                 className='helloBtn'
